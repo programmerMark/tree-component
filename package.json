@@ -12,7 +12,7 @@
         "dist"
     ],
     "scripts": {
-        "copy-files": "copyfiles -e **/*.ts -e **/*.tsx -u 1 src/**/*.css dist/esm",
+        "copy-files": "copyfiles -e **/*.ts -e **/*.tsx -u 1 src/**/*.css src/**/*.png src/**/*.gif  dist/esm",
         "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs && npm run copy-files",
         "build:esm": "tsc",
         "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
