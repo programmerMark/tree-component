@@ -6,7 +6,7 @@ import { IAsync, ICallback, ICheck, IData, IEdit, ISetting, IView } from './inte
 import { IZTreeNode } from './interface/IZTreeNode';
 import { ITreeObj } from './interface/ITreeObj';
 import Id from './Id';
-import '@ztree/ztree_v3/css/metroStyle/metroStyle.css';
+import './metroStyle.css';
 import './styles/tree.css';
 
 declare global {
