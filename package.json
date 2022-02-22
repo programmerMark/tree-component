@@ -1,7 +1,8 @@
 {
     "name": "@programmermark/ztree",
     "repository": {
-        "type": "git"
+        "type": "git",
+        "url": "https://github.com/programmerMark/tree-component.git"
     },
     "version": "0.0.1",
     "description": "使用ztree.js创建的react树型组件.",
@@ -13,7 +14,8 @@
     "scripts": {
         "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
         "build:esm": "tsc",
-        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+        "prepare": "npm run build"
     },
     "author": "programmermark",
     "license": "MIT",
