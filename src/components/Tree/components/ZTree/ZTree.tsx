@@ -1,6 +1,7 @@
 import React, { memo, useEffect, useMemo, useRef, useState, useImperativeHandle } from 'react';
 import $ from 'jquery';
 import classNames from 'classnames';
+import '@ztree/ztree_v3/js/jquery.ztree.all';
 
 import { IAsync, ICallback, ICheck, IData, IEdit, ISetting, IView } from './interface/ISetting';
 import { IZTreeNode } from './interface/IZTreeNode';
@@ -18,8 +19,6 @@ declare global {
 if (!window.jQuery) {
     window.jQuery = $;
 }
-
-require('@ztree/ztree_v3/js/jquery.ztree.all');
 
 export interface ITreeProps {
     /** 自定义类名 */
