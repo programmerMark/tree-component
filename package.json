@@ -4,7 +4,7 @@
         "type": "git",
         "url": "https://github.com/programmerMark/tree-component.git"
     },
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "使用ztree.js创建的react树型组件.",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
