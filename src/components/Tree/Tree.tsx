@@ -68,9 +68,9 @@ export const Tree: React.FC<ITreeProps> = (props) => {
      * @param checked 是否选中，true: 选中，false：不选中
      */
     function handleTreeNode(node: ITreeNode) {
-        const { isSelfWare, children } = node;
+        const { children } = node;
         let childIds: string[] = [];
-        if (!isSelfWare && children && children.length > 0) {
+        if (children && children.length > 0) {
             // 子级全部选中
             childrenKey = [];
             recursiveDataByKey(children, 'id');
